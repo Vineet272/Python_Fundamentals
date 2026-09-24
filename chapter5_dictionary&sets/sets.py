@@ -59,3 +59,5 @@ print(a.issuperset(b))
 #isdisjoint check dono sets me koi common element nhi hai
 print(a.isdisjoint(b))
 
+#in python 1 == 1.0. therefore if we add 20, 20.0 in a set it will conatin only value as it is simply duplicates of each other.
+
