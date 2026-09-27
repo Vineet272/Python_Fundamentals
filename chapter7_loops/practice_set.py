@@ -38,37 +38,60 @@
 #         print(f"{num} is not a prime number")
 
 #pattern 
-n = int(input("Enter the value of n: "))
+# n = int(input("Enter the value of n: "))
+n=6
 
 # 1st pattern
-i=1
-while(i<=n):
-    j=1
-    while(j<=i):
-        print("*", end="")
-        j+=1
-    print()
-    i+=1
-print()
+# i=1
+# while(i<=n):
+#     j=1
+#     while(j<=i):
+#         print("*", end="")
+#         j+=1
+#     print()
+#     i+=1
+# print()
 
-#2nd pattern 2*i+1
-i=0
-while(i<n): 
-    j=0
-    k=0
-    while(k<(n-(i+1))):
-        print(" ", end="")
-        k+=1
+# #2nd pattern 2*i+1
+# i=0
+# while(i<n): 
+#     j=0
+#     k=0
+#     while(k<(n-(i+1))):
+#         print(" ", end="")
+#         k+=1
 
-    while(j< (2*i+1)):
-        print("*", end="")
-        j+=1
-    print()
-    i+=1
+#     while(j< (2*i+1)):
+#         print("*", end="")
+#         j+=1
+#     print()
+#     i+=1
 
 #3rd pattern
-for i in range(0, n):
-    if(i == 0):
-        print("*" *n, end="")
-    
+# i=0
+# while(i<n):
+#     j=0
+#     if(i==0 or i == n-1):
+#         while(j<n):
+#             print("*", end="")
+#             j+=1
+#     else:
+#         while(j<n):
+#             if(j==0 or j== n-1):
+#                 print("*", end="")
+#             else:
+#                 print(" ", end="")
+#             j+=1
+#     i+=1
+#     print()
+
+for i in range(0,n):
+    if(i==0 or i==n-1):
+        print("*"*n,end="")
+    else:
+        print("*", end="")
+        print(" "*(n-2),end="")
+        print("*", end="")
     print()
+    i+=1
+    
