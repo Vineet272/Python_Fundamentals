@@ -24,13 +24,23 @@
 # greet()
 
 #functions with return value
-def avg():
-    n1 = int(input("Enter 1st number: "))
-    n2 = int(input("Enter 2nd number: "))
-    n3 = int(input("Enter 3rd number: "))
+# def avg():
+#     n1 = int(input("Enter 1st number: "))
+#     n2 = int(input("Enter 2nd number: "))
+#     n3 = int(input("Enter 3rd number: "))
 
-    result = round((n1+n2+n3)/3, 2)        #round() it is for limiting the digits after decimal place in theis it is 2 digits
-    return result
+#     result = round((n1+n2+n3)/3, 2)        #round() it is for limiting the digits after decimal place in theis it is 2 digits
+#     return result
 
-avrg = avg()
-print(avrg)
+# avrg = avg()
+# print(avrg)
+
+#Recursion concept 
+#function calling itself untill it hits the base condition
+def factorial(n):
+    if(n==1 or n==0):
+        return 1
+    return n*factorial(n-1)
+
+result = factorial(6)
+print(result)
